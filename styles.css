@@ -222,6 +222,9 @@ body {
 }
 
 /* Tutorials Section */
+.tutorials-section__title {
+  margin: 87px 0 75px;
+}
 .tutorials-section__title b {
   color: #c271ff;
 }
