@@ -166,6 +166,7 @@ body {
 }
 
 .main-btn {
+  text-transform: uppercase;
   background-color: #c271ff;
   font-size: 14px;
   padding: 13px 28px;
@@ -222,8 +223,12 @@ body {
 }
 
 /* Tutorials Section */
+.tutorials-section {
+  margin: 87px 0;
+}
+
 .tutorials-section__title {
-  margin: 87px 0 75px;
+  margin-bottom: 75px;
 }
 .tutorials-section__title b {
   color: #c271ff;
@@ -298,6 +303,58 @@ body {
 
 .tutorial-arrow--right {
   right: -28px;
+}
+
+/* Membership Section */
+.membership-section {
+  background-color: #071629;
+  padding: 75px 0 89px;
+}
+
+.membership-section__title b {
+  color: #c271ff;
+}
+
+.membership-container {
+  margin: 50px 0 82px;
+}
+
+.membership-row {
+  row-gap: 50px;
+}
+
+.membership__img-container {
+  width: 45px;
+  height: 36px;
+}
+
+.membership__title {
+  margin-bottom: 13px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.membership__text {
+  width: 212px;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+/* Latest Videos Section */
+.videos-section {
+  margin: 87px 0;
+}
+
+.videos-section__title {
+  margin-bottom: 75px;
+}
+.videos-section__title b {
+  color: #c271ff;
+}
+
+.video-carousel {
+  position: static;
+  width: 85%;
 }
 
 @media screen and (min-width: 768px) {
