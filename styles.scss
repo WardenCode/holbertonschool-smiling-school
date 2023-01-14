@@ -415,6 +415,37 @@ body {
 	width: 85%;
 }
 
+/* Footer */
+
+.footer {
+	background-color: $secondary-color;
+	padding: 50px 0 34px;
+}
+
+.footer-info {
+}
+
+.footer-info__left {
+	gap: 7px;
+	width: 169px;
+}
+
+.footer-smile-container {
+	width: 37px;
+	height: 30px;
+}
+
+.footer-icon-container {
+	width: 144px;
+}
+
+.footer-info__right {
+}
+
+.social_link {
+	font-size: 30px;
+}
+
 @media screen and (min-width: 576px) {
 }
 
