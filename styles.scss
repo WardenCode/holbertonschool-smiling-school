@@ -404,3 +404,13 @@ body {
 		right: -24px;
 	}
 }
+
+@media (min-width: 1200px) {
+	.tutorial-arrow--left {
+		left: -80px;
+	}
+
+	.tutorial-arrow--right {
+		right: -80px;
+	}
+}
