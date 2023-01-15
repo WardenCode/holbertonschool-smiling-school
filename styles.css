@@ -25,28 +25,20 @@
   content: "\e908";
 }
 
-.holberton_school-icon-ic_hearing:before {
-  content: "\e909";
-}
-
 .holberton_school-icon-ic_instagram:before {
   content: "\e90a";
-}
-
-.holberton_school-icon-ic_music:before {
-  content: "\e90d";
-}
-
-.holberton_school-icon-ic_sound:before {
-  content: "\e90e";
 }
 
 .holberton_school-icon-ic_twitter:before {
   content: "\e90f";
 }
 
-.holberton_school-icon-ic_video:before {
-  content: "\e910";
+.holberton_school-icon-check:before {
+  content: "\e905";
+}
+
+.holberton_school-icon-search_1:before {
+  content: "\e912";
 }
 
 /* General Styles */
@@ -65,12 +57,28 @@ body {
   font-family: "Source sans Pro", Arial, Helvetica, sans-serif;
 }
 
+.coiny {
+  font-family: "Coiny", Arial, Helvetica, sans-serif;
+}
+
+/** HOMEPAGE **/
 /* HERO SECTION */
 .hero {
   background-color: #071629;
-  background-image: url("assets/images/pic_1.jpg");
   background-repeat: no-repeat;
   background-position: center top;
+}
+
+.hero--homepage {
+  background-image: url("assets/images/pic_1.jpg");
+}
+
+.hero--pricing {
+  background-image: url("assets/images/pic_2.jpg");
+}
+
+.hero--courses {
+  background-image: url("assets/images/pic_3.jpg");
 }
 
 .menu-icon {
@@ -118,6 +126,29 @@ body {
 
 .nav-menu__item {
   z-index: 0;
+}
+
+.nav-menu__link {
+  color: #ffffff;
+  transition: all 0.4s ease;
+}
+.nav-menu__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 0;
+  border-radius: 1.5px;
+  background-color: #ffffff;
+  height: 2px;
+  transition: all 0.4s ease;
+}
+.nav-menu__link:hover {
+  color: #c271ff;
+}
+.nav-menu__link:hover::after {
+  width: 70px;
 }
 
 .menu-btn:checked ~ .nav-menu {
@@ -381,6 +412,142 @@ body {
   font-size: 30px;
 }
 
+.text-zone {
+  padding: 162px 0 63px;
+}
+
+/** PRICING **/
+.pricing-main-text {
+  margin-bottom: 48px;
+}
+.pricing-main-text h1,
+.pricing-main-text span,
+.pricing-main-text p {
+  font-size: 24px;
+}
+
+.pricing-main-text ~ p {
+  font-size: 60px;
+  line-height: 75.42px;
+}
+
+.inline-img-smile {
+  width: 30px;
+}
+
+.prices-section {
+  padding-bottom: 90px;
+}
+
+.price-container {
+  margin-bottom: 51px;
+}
+
+.price-container__text {
+  font-size: 44px;
+  line-height: 55.31px;
+}
+
+.columns-heading-table {
+  font-size: 12px;
+}
+
+.left-table {
+  font-size: 17px;
+  line-height: 33.6px;
+}
+
+.check-icon {
+  color: #82d24f;
+  font-size: 28px;
+}
+
+.table-img {
+  height: 35px;
+  width: 88px;
+}
+
+/** FAQ **/
+.faq-section {
+  background-color: #ffffff;
+  padding-top: 75px;
+  padding-bottom: 108px;
+}
+
+.faq-container__title {
+  font-size: 60px;
+  margin-bottom: 75px;
+}
+
+.faq-row {
+  row-gap: 146px;
+}
+
+/** Courses **/
+.text-zone--courses {
+  padding: 31px 0 51px;
+}
+.text-zone--courses h2 {
+  max-width: 480px;
+}
+.text-zone--courses span {
+  color: #c271ff;
+}
+
+/** Filters Section **/
+.filter-section {
+  background-color: #c271ff;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.row-inputs {
+  row-gap: 19px;
+}
+
+.label {
+  font-size: 12px;
+}
+
+.search-icon {
+  left: 30px;
+  bottom: 8px;
+  font-size: 22px;
+}
+
+.input-text input {
+  padding-left: 55px;
+}
+
+.base-input {
+  border-radius: 0;
+  border: 0;
+  background-color: #d195ff;
+}
+.base-input:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: #d195ff;
+}
+.base-input::placeholder {
+  color: #ffffff;
+}
+
+.dropdown-item:hover {
+  color: #c271ff;
+}
+
+/** Result List Section **/
+.result-list-section {
+  padding-top: 47px;
+  padding-bottom: 75px;
+}
+
+.results-row {
+  row-gap: 32px;
+}
+
+/** Breakpoints **/
 @media screen and (min-width: 768px) {
   .compose-logo {
     width: 169px;
@@ -417,6 +584,21 @@ body {
   }
   .carousel-btn--right {
     right: -24px;
+  }
+  .text-zone {
+    padding: 193px 0 55px;
+  }
+  .pricing-main-text {
+    margin-bottom: 75px;
+  }
+  .price-container {
+    margin-bottom: 10px;
+  }
+  .faq-row {
+    row-gap: 74px;
+  }
+  .row-inputs {
+    row-gap: 24px;
   }
 }
 @media (min-width: 1200px) {
